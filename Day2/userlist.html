@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>javascript</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <script>
+        var users = [{
+            id: 1,
+            name: "Text User",
+            email: "textuser@gmail.com"
+        }, {
+            id: 2,
+            name: "Anne Hunter",
+            email: "annehunter@gmail.com"
+        }, {
+            id: 3,
+            name: "Jale Boser",
+            email: "jaleboser@gmail.com"
+        }]
+
+        // for (bar in users) {
+        //     document.write(users[bar].id + "<br>")
+        //     document.write(users[bar].name + "<br>")
+        //     document.write(users[bar].email + "<br>")
+        // }
+    </script>
+    <table border="1" cellpadding="25px">
+        <thead>
+            <tr>
+                <th>id</td>
+                    <td>name</td>
+                    <td>Email</td>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                for (bar in users) {
+
+                    //    var html = ""
+                    //    html += "<tr>"
+                    //    html += "<td>" + users[bar].id + "</td>"
+                    //    html += "<td>" + users[bar].name + "</td>"
+                    //    html += "<td>" + users[bar].email + "</td>"
+                    //    html += "</tr>"
+                    //    document.write(html)
+
+                    //Second method
+
+                    // document.write(" <tr>" + "<td>" + users[bar].id  + "</td>")
+                    // document.write("<td>" + users[bar].name + "</td>")
+                    // document.write("<td>" + users[bar].email + "</td>" + "</tr>")
+
+
+                    //third mehod
+
+                    var newTable = ` <tr><td> ${users[bar].id}  </td><td> ${users[bar].name}</td> <td> ${users[bar].email}</td>`
+
+                    document.write(newTable);
+
+
+                }
+            </script>
+
+            <tbody>
+    </table>
+</body>
+
+</html>

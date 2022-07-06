@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>javascript</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <script>
+        var fullName = "shobha venkatesh kumar"
+        document.write(fullName + " <br>");
+        fullName = fullName.split(" ");
+        //   var fullName = ["shobha", "venkatesh", "kumar"]
+        document.write("<br> " + fullName[0]);
+
+
+
+        document.write("<hr>");
+        document.write("<br>" + "<h2> Before Replace </h2>");
+        var address = "i am staying in bangalore "
+        var newAddress = address.replace("bangalore", "Haasan")
+        document.write(address);
+        document.write("<br>" + "<h2> after Replace </h2>");
+        document.write(newAddress);
+        document.write("<hr>");
+
+
+        var str = "I am a software developer"
+        document.getElementById("demo").innerHTML = str
+
+        function clickHandler() {
+            if ((str.indexOf("developer")) != -1) {
+                document.getElementById("demo").innerHTML = "developer"
+            } else {
+
+                document.getElementById("demo").innerHTML = "not exist "
+            }
+        }
+
+        //  second method
+
+        // var str = "I am a software developer"
+        // document.write(str + "<br>" + "<br>");
+
+        // function clickHandler() {
+        //     if ((str.indexOf("developer")) != -1) {
+        //         alert("developer  ")
+        //     } else {
+        //         alert("not exist ")
+        //     }
+        // }
+    </script>
+
+    <p id="demo">I am a software developer</p>
+
+    <button onclick="clickHandler()">Search</button>
+
+    <!----Second method-->
+
+    <!-- <button onclick="clickHandler()">Search</button> -->
+
+</body>
+
+</html>

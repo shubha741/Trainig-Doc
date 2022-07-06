@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Application</title>
+
+</head>
+
+<body>
+
+    <script>
+        function imageShow() {
+            var showImage = document.getElementById("showImage")
+            var textVariable = document.getElementById("changetextBotton")
+            var changeText = document.getElementById("changeText")
+            if (changetextBotton.innerHTML == "Show Image") {
+                textVariable.innerHTML = "Hide Image"
+                showImage.style.display = "block";
+            } else if (changetextBotton.innerHTML == "Hide Image") {
+                textVariable.innerHTML = "Show Image"
+                showImage.style.display = "none";
+            }
+        }
+    </script>
+
+
+    <button onclick="imageShow()" id="changetextBotton">Show Image</button>
+
+    <br>
+    <img src="https://thumbs.dreamstime.com/b/aster-flowers-art-design-26968847.jpg" width="300px" id="showImage" style="display: none;">
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var c = 0;
+        var t;
+        var time_is_on = 0;
+
+        function timedCount() {
+            document.getElementById("txt").value = c;
+            c = c + 1;
+            t = setTimeout("timedCount()", 1000); // after 1 second 
+        }
+
+        function doTimer() {
+            if (!time_is_on) {
+                timedCount();
+                time_is_on = 1; // chaging flag
+            }
+        }
+
+        function stopCount() {
+            clearTimeout(t);
+            time_is_on = 0;
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <input type="button" value="Start Count" onclick="doTimer()">
+    <input type="text" id="txt">
+    <input type="button" value="Stop Count" onclick="stopCount()">
+</body>
+
+</html>

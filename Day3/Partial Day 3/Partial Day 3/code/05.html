@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Employee(id, name) { // constructor function
+            this.id = id;
+            this.name = name;
+        }
+
+        Employee.prototype.bale = "rrrr"
+
+
+        var shobha = new Employee(101, "Shobha");
+        shobha.phone = "iPhone";
+
+        var narendra = new Employee(102, "Narendra");
+        narendra.phone = "iPhone";
+
+        var bhavya = new Employee(103, "Bhavya");
+
+        console.log("Shobha", shobha);
+        console.log("Narendra", narendra);
+        console.log("Bhavya", bhavya);
+
+        // i want to gift BMW car to all my employees 
+
+        /*
+
+        Prototype - Object.prototype.name = value
+
+        */
+
+        Employee.prototype.car = "BMW";
+
+        document.write(shobha.car);
+
+        document.write("<br>");
+
+        document.write(narendra.car);
+
+        document.write("<br>");
+
+        document.write(bhavya.car);
+    </script>
+</body>
+
+</html>

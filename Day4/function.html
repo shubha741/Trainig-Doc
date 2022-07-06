@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>javascript</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <script>
+        function displayCities(cities) {
+            var i, city = " ";
+            for (i = 0; i < cities.length; i++) {
+                city += cities[i] + "  ";
+            }
+            document.write('cities name are', city)
+        }
+
+        var cities = ["bangalore", "mangalore ", "haasan ", "delhi ", "mumbai "]
+
+        displayCities(cities);
+
+
+        var details = {
+            firstName: "shobha",
+            lastName: "Venkatesh",
+            fullname: function() {
+                return "Employee Full name is" + " " + this.firstName + this.lastName
+            }
+
+        }
+
+
+        document.write("<h2>object method</h2>");
+        document.write(details.fullname());
+
+
+        //aaray
+        function arrayFuction(x) {
+
+            var i, n, a = []
+            for (i = 0; i < 100; i++) {
+
+                a.push(i);
+                return a;
+
+            }
+            // document.write("hello", a);
+            console.log();
+        }
+
+        arrayFuction(1000);
+    </script>
+</body>
+
+
+
+
+
+
+</html>

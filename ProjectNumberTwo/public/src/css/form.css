@@ -1,0 +1,97 @@
+.formPage form {
+    text-align: right;
+}
+
+.formPage label {
+    font-weight: 700;
+    text-align: end;
+}
+
+.formPage input {
+    border: 2px solid #000;
+    outline: none;
+    font-weight: 700;
+    color: #000;
+}
+
+.registerPage>.col-form-label {
+    font-weight: 600;
+}
+
+.registerSucceFull {
+    text-align: center;
+}
+
+.registerHeader {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.registerSucceFull a {
+    color: #0000ff;
+}
+.welcome {
+    text-align: center;
+}
+
+.welcomHeader {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.existUser {
+    font-weight: 700;
+}
+
+.newUser {
+    font-weight: 700;
+}
+
+.loginBtn {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.RegisterBtn {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.RegisterBtn a {
+    text-decoration: none;
+    color: #000;
+}
+
+.light_blueBtn {
+    width: 150px;
+    height: 40px;
+    border: 2px solid #000;
+    background-color: #66ffff;
+    border-radius: 10px;
+    color: #000;
+}
+
+.light_blueBtn:hover {
+    background-color: #66ffff;
+    color: #000;
+}
+
+.light_blueBtn a {
+    color: #000;
+    text-decoration: none;
+}
+
+.loginBtn a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
